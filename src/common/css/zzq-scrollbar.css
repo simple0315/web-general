@@ -1,0 +1,52 @@
+
+/*WebKit Safari Chrome*/
+.zzq-scrollbar::-webkit-scrollbar {
+	width: 24px;
+}
+.zzq-scrollbar::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: linear-gradient(#1B9AF705,#7B72E9AA,#1B9AF705);
+}
+.zzq-scrollbar::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: linear-gradient(#7B72E911,#ff000011,#7B72E911);
+}
+
+/*Trident Internet Explorer*/
+.zzq-scrollbar{
+	scrollbar-arrow-color: #7B72E9;/*三角箭头的颜色*/   
+	scrollbar-face-color: #A5DE37;/*立体滚动条的颜色*/   
+	scrollbar-3dlight-color: #A5DE37;/*立体滚动条亮边的颜色*/   
+	scrollbar-highlight-color: #A5DE37;/*滚动条空白部分的颜色*/   
+	scrollbar-shadow-color: #A5DE37;/*立体滚动条阴影的颜色*/   
+	scrollbar-darkshadow-color: #A5DE37;/*立体滚动条强阴影的颜色*/   
+	scrollbar-track-color: #1B9AF7;/*立体滚动条背景颜色*/   
+	scrollbar-base-color:#1B9AF7;/*滚动条的基本颜色*/   
+}
+
+/*Gecko Mozilla Firefox*/
+@-moz-document url-prefix(http://),url-prefix(https://) {
+	/* 滚动条颜色 */
+	scrollbar {
+		-moz-appearance: none !important;
+		background: rgb(0,255,0) !important;
+	}
+	/* 滚动条按钮颜色 */
+	thumb,scrollbarbutton {
+		-moz-appearance: none !important;
+		background-color: rgb(0,0,255) !important;
+	}
+	/* 鼠标悬停时按钮颜色 */
+	thumb:hover,scrollbarbutton:hover {
+		-moz-appearance: none !important;
+		background-color: rgb(255,0,0) !important;
+	}
+	/* 隐藏上下箭头 */
+	scrollbarbutton {
+		display: none !important;
+	}
+	/* 纵向滚动条宽度 */
+	scrollbar[orient="vertical"] {
+		min-width: 15px !important;
+	}
+}

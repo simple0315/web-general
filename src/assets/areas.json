@@ -1,0 +1,11 @@
+[{
+  "label": "湖北",
+  "children": [{
+    "label": "咸宁",
+    "children": [{
+      "label": "咸安区"
+    }, {
+      "label": "温泉区"
+    }]
+  }]
+}]
